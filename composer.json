@@ -1,0 +1,44 @@
+{
+    "name": "sourecode/conventional-changelog",
+    "type": "symfony-bundle",
+    "description": "Conventional changelog integration into symfony",
+    "keywords": [
+        "symfony",
+        "convention",
+        "changelog",
+        "git",
+        "conventional-changelog"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Schilling",
+            "email": "jason@sourecode.dev"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "symfony/http-kernel": "^5.3 || ^6.0",
+        "symfony/dependency-injection": "^5.3 || ^6.0",
+        "symfony/config": "^5.3 || ^6.0",
+        "symfony/console": "^5.3 || ^6.0",
+        "sourecode/conventional-changelog": "dev-master"
+    },
+    "require-dev": {
+        "nyholm/symfony-bundle-test": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoureCode\\Bundle\\ConventionalChangelog\\": "./src"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SoureCode\\Bundle\\ConventionalChangelog\\Tests\\": "./tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
