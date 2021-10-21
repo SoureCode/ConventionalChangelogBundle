@@ -2,13 +2,7 @@
     "name": "sourecode/conventional-changelog",
     "type": "symfony-bundle",
     "description": "Conventional changelog integration into symfony",
-    "keywords": [
-        "symfony",
-        "convention",
-        "changelog",
-        "git",
-        "conventional-changelog"
-    ],
+    "keywords": ["symfony", "convention", "changelog", "git", "conventional-changelog"],
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SoureCode\\Bundle\\ConventionalChangelog\\": "./src"
+            "SoureCode\\Bundle\\ConventionalChangelog\\": "src"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -30,7 +24,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SoureCode\\Bundle\\ConventionalChangelog\\Tests\\": "./tests"
+            "SoureCode\\Bundle\\ConventionalChangelog\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
         }
     },
     "minimum-stability": "dev"
