@@ -1,5 +1,5 @@
 {
-    "name": "sourecode/conventional-changelog",
+    "name": "sourecode/conventional-changelog-bundle",
     "type": "symfony-bundle",
     "description": "Conventional changelog integration into symfony",
     "keywords": ["symfony", "convention", "changelog", "git", "conventional-changelog"],
